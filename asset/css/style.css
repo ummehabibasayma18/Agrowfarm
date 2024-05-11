@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Kalam:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+body{
+    /* font-family: "Abril Fatface", serif !important; */
+    font-family: "Kalam", cursive !important;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* common code start  */
+.bg-primary{
+    background-color: #ff9900 !important;
+}
+.text-primary{
+    color:#ff9900 !important;
+}
+.bg-secondary{
+    background-color: #f5f9f7 !important;
+}
+#goTop {
+    position: fixed;
+    bottom: 10000px;
+    z-index: 2000;
+    right:20px;
+    transition: 1s;
+    
+  }
+
+/* common code end  */
+
+/* header section start */
+header{
+   height:100%;
+    position: relative;
+  
+}
+header .nav-link{
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+}
+header .nav-link{
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+}
+header .nav-link::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: #ff9900;
+    transition: .5s;
+}
+header .nav-link:hover::before{
+    width: 100%;
+}
+header .nav-link:hover{
+    color: #ff9900;
+}
+
+header .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: #ff9900;
+}
+header .btn-success{
+    background-color:  #ff9900;
+}
+header .btn-success:hover{
+    background-color:  #ff9900;
+}
+
+
+.navbar-toggler:focus {
+
+    box-shadow: none !important}
+
+
+header .header-content a{
+    
+    transition: .5s;
+    
+}
+
+header .header-video{
+    position: absolute;
+    top: 0;
+    left: 0px;
+    z-index: -20;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+.set-nav-bg{
+    position: fixed;
+    top:0;
+    transition: .5s;
+    background:linear-gradient(to right top , #3e3b38,#b76e02, #3e3b38)!important;
+    z-index: 55555;
+    width:100%;
+  
+  }
+
+/* header section end */
+/* info sec start */
+.service-link{
+    
+    list-style: none;
+}
+.service-link a{
+    color:rgb(19, 82, 19);
+    font-size: 18px;
+    text-decoration: none;
+ }
+/* info sec end */
+
+/* Why us section */
+/* round progress bar */
+
+.progress {
+    width: 80px;
+    height: 80px;
+    font-size: 30px;
+    color:rgb(19, 82, 19);
+    overflow: hidden;
+    position: relative;
+    background-color:white; 
+    text-align: center;
+    line-height: 200px;
+    margin: 10px;
+}
+
+
+
+
+.progress .title {
+    position: relative;
+    z-index: 100;
+    bottom: 55px;
+    left:20px;
+    color:rgb(19, 82, 19);
+}
+
+.progress .overlay {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color:white
+}
+
+.progress .left, .progress .right {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 10;
+    left: 0;
+    border: 10px solid rgb(19, 82, 19); 
+    border-radius: 100px 0px 0px 100px;
+    border-right: 0;
+    transform-origin: right;
+}
+
+.progress .left {animation: load1 1s linear forwards;}
+
+.progress:nth-of-type(2) .right, .progress:nth-of-type(3) .right {animation: load2 .5s linear forwards 1s;}
+
+.progress:last-of-type .right, .progress:first-of-type .right {animation: load3 .8s linear forwards 1s;}
+
+@keyframes load1 {
+    0% {transform: rotate(0deg);}
+
+    100% {transform: rotate(180deg);}
+}
+
+@keyframes load2 {
+    0% {z-index: 100;transform: rotate(180deg);}
+
+    100% {z-index: 100;transform: rotate(270deg);}
+}
+
+@keyframes load3 {
+    0% {z-index: 100;transform: rotate(180deg);}
+
+    100% {
+        z-index: 100;transform: rotate(315deg);}
+}
+/* why us sec end */
+/* root sec start */
+.root-section{
+    position: relative;
+    z-index: 1;
+    padding: 70px 0; 
+    background-image:linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(../img/banner1.jpg);
+    background-position:center center;
+    background-size: cover;
+    background-repeat: no-repeat; 
+}
+/* root sec end */
+/* recent blogs sec start */
+.card-header .card-img {
+    margin: 0 auto;
+    overflow: hidden;
+}
+.card-header .card-img .image{
+    transition: .5s;
+}
+.card-header .card-img .image:hover{
+    transform: scale(1.2);
+}
+/* recent blog sec end */
+/* Testimonial section start */
+.testimonial-section{
+    background-image:linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(../img/strawberry-field.jpg);
+    /* background-position:center center; */
+    background-size: cover;
+    /* background-repeat: no-repeat;  */
+}
+.testimonial-section .carousel-inner,
+.testimonial-section .carousel-item, 
+.testimonial-section .slider-content {
+    height: auto;
+}
+.client-img{
+    height: 70px;
+    width:70px;
+    border-radius: 50%;
+}
+/* Testimonial section end */
+.FooterSocial{
+    list-style: none;
+    color:white;
+    display: flex;
+    gap:15px;
+}
+ .FooterSocial li a {
+    color:rgb(2, 114, 51);
+    background-color: #fff;
+    display: inline-block;
+    text-align:center;
+    font-size: 16px;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    border-radius: 50%;
+}
+.FooterSocial li a:hover {
+    color:white;
+    background-color: #ff9900;
+   
+}
+.text-success:hover{
+    color: #ff9900!important;
+}
+
+.emailBtn:hover{
+    background-color:rgb(2, 114, 51)!important;
+}
+
+
+/* counter sec */
